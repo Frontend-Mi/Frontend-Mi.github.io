@@ -1,0 +1,5 @@
+<a href="whatsapp://send?text=Hello&phone=+628********1">Hubungi Saya</a> WA
+<a href="tel:+62812 21223099">
+<a href="#" target="_blank">
+
+discord
