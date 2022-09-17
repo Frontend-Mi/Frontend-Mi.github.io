@@ -339,6 +339,20 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.home-info a.btn_cv {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
 .home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
