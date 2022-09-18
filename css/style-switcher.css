@@ -52,6 +52,10 @@
     top: 110px;
 }
 
+.style-switcher .full-screen {
+    top: 165px;
+}
+
 .style-switcher h4 {
     margin: 0 0 10px;
     color: var(--text-black-700);
