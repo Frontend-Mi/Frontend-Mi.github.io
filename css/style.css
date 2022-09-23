@@ -568,8 +568,23 @@ h3.my-profession {
     margin-right: 5px;
 }
 
+.about .about-content .timeline .location-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline .job-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
 .about .about-content .timeline .timeline-title {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: capitalize;
@@ -581,7 +596,14 @@ h3.my-profession {
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
-    
+    padding-bottom: 10px;
+}
+
+.about .about-content .timeline .detail-timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
 }
 
 /* Service */
@@ -838,4 +860,111 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+.style-switcher-toggler .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.style-switcher-toggler:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.day-night .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    /* margin-left: -60px; */
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.day-night:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.change-language .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.change-language:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.full-screen .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background: linear-gradient(to left, #393E46, red);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.full-screen:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
 }
