@@ -417,8 +417,8 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -451,14 +451,14 @@ h3.my-profession {
 }
 
 .about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 100%;
+    max-width: 1000%;
     margin-top: 40px;
 }
 
 .about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 25%;
+    max-width: 25%;
 }
 
 .about .about-content .skills .skill-item h5 {
@@ -578,6 +578,13 @@ h3.my-profession {
 .about .about-content .timeline .job-title {
     font-weight: bold;
     font-size: 20px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline .job-subtitle {
+    font-weight: 400;
+    font-size: 18px;
     margin-bottom: 15px;
     text-transform: capitalize;
     color: var(--text-black-900);
@@ -685,6 +692,7 @@ h3.my-profession {
     color: var(--text-black-900);
     font-weight: 500;
 }
+
 .portfolio .portfolio-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -701,6 +709,13 @@ h3.my-profession {
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
+}
+
+.portfolio .portfolio-item-inner .portfolio-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }
 
 /* Contact */
@@ -865,7 +880,7 @@ h3.my-profession {
 .style-switcher-toggler .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background: var(--skin-color);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -889,7 +904,7 @@ h3.my-profession {
 .day-night .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background: var(--skin-color);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -913,7 +928,7 @@ h3.my-profession {
 .change-language .tooltiptext {
     visibility: hidden;
     width: 140px;
-    background-color: black;
+    background: var(--skin-color);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -937,7 +952,7 @@ h3.my-profession {
 .full-screen .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background: linear-gradient(to left, #393E46, red);
+    background: var(--skin-color);
     color: #fff;
     text-align: center;
     border-radius: 6px;
