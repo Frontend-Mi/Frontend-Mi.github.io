@@ -393,6 +393,11 @@ h3.my-profession {
     box-shadow: 8px 8px var(--text-black-900);
 }
 
+.home-img img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 /* About */
 .about .about-content {
     flex: 0 0 100%;
@@ -469,7 +474,38 @@ h3.my-profession {
 
 .about .about-content .gambar .sub-gambar img {
     height: 400px;
-    box-shadow: 8px 8px var(--text-black-900)
+    box-shadow: 8px 8px var(--text-black-900);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--skin-color);
+}
+
+.sub-gambar:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: var(--text-black-900);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 401px;
+  width: 284px;
 }
 
 .about .about-content .skills {
