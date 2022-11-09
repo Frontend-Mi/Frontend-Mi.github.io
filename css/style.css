@@ -29,6 +29,10 @@ body {
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 ::before,::after {
     box-sizing: border-box;
 }
@@ -342,9 +346,9 @@ h3.my-profession {
 .home-info a.btn_cv {
     margin-bottom: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bolder;
     padding: 12px 35px;
-    color: white;
+    color: var(--bg-black-900);
     border-radius: 40px;
     display: inline-block;
     white-space: nowrap;
@@ -386,6 +390,7 @@ h3.my-profession {
     margin: auto;
     border-radius: 5px;
     height: 400px;
+    box-shadow: 8px 8px var(--text-black-900);
 }
 
 /* About */
@@ -417,8 +422,8 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 70%;
+    max-width: 70%;
     margin-top: 40px;
 }
 
@@ -450,9 +455,26 @@ h3.my-profession {
     margin-top: 10px;
 }
 
+.about .about-content .gambar {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+.about .about-content .gambar .sub-gambar {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .gambar .sub-gambar img {
+    height: 400px;
+    box-shadow: 8px 8px var(--text-black-900)
+}
+
 .about .about-content .skills {
     flex: 0 0 100%;
-    max-width: 1000%;
+    max-width: 100%;
     margin-top: 40px;
 }
 
@@ -718,6 +740,10 @@ h3.my-profession {
     padding: 10px;
 }
 
+.portfolio .portfolio-item-inner .portfolio-title p{
+    color: var(--text-black-900);
+}
+
 /* Contact */
 .contact-title {
     color: var(--skin-color);
@@ -871,7 +897,8 @@ h3.my-profession {
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info,
-    .about .about-content .personal-info .info-item {
+    .about .about-content .personal-info .info-item,
+    .about .about-content .skills .skill-item {
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -982,4 +1009,89 @@ h3.my-profession {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent transparent black;
+}
+
+
+
+
+.genre {
+    display: flex;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    min-width: fit-content;
+}
+
+.genre a {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    color: var(--text-black-900);
+    font-size: 15px;
+}
+
+.genre:hover {
+    background: var(--skin-color);
+    color: var(--skin-color);
+    box-shadow: 0 0 50px var(--skin-color);
+    transition-delay: 0.5s;
+}
+
+.genre:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--skin-color);
+    border-left: 2px solid var(--skin-color);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.genre:hover:before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.genre:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--skin-color);
+    border-right: 2px solid var(--skin-color);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.genre:hover:after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+.genre-utama {
+    margin: 2px;
+    height: fit-content;
+    display: flex;
+    width: 90%;
+    overflow: auto;
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.genre-utama::-webkit-scrollbar {
+    display: none;
 }
