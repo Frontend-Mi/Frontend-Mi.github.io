@@ -79,7 +79,7 @@
 }
 
 .style-switcher .color-1 {
-    background: #ec1839;
+    background: #ff0000;
 }
 
 .style-switcher .color-2 {
@@ -99,9 +99,21 @@
 }
 
 .style-switcher .color-6 {
-    background: yellowgreen;
+    background: #adff2f;
 }
 
-/* .style-switcher .color-7 {
-    background: greenyellow;
-} */
+.style-switcher .color-7 {
+    background: #03e9f4;
+}
+
+.style-switcher .color-8 {
+    background: #6ba5f2;
+}
+
+.style-switcher .color-9 {
+    background: #DC143C;
+}
+
+.style-switcher .color-10 {
+    background: #778899;
+}
