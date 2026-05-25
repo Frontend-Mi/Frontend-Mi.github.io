@@ -117,3 +117,7 @@
 .style-switcher .color-10 {
     background: #778899;
 }
+
+.portfolio .portfolio-item-inner .portfolio-title a {
+    color: var(--text-white-900);
+}
