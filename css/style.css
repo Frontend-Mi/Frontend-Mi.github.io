@@ -780,6 +780,10 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
+.portfolio .portfolio-item-inner .portfolio-title a{
+    color: var(--text-black-900);
+}
+
 /* Contact */
 .contact-title {
     color: var(--skin-color);
